@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Demo 1 : Convert All Textareas</title>
+  <link rel="stylesheet" href="font-awesome.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+<!-- <svg style="display: none;"><defs> -->
+<!--   <font id="FontAwesomeRegular" horiz-adv-x="1843" > -->
+<!--     <font-face units-per-em="2048" ascent="1536" descent="-512" /> -->
+<!--       <missing-glyph horiz-adv-x="512" /> -->
+<!--       <glyph horiz-adv-x="0" /> -->
+<!--       <glyph horiz-adv-x="0" /> -->
+<!--       <glyph unicode="&#xf000;" horiz-adv-x="1536" d="M6 1489q20 47 70 47h1382q51 0 72 -47q20 -47 -17 -84l-610 -610v-641h248q33 0 55.5 -22.5t22.5 -53.5q0 -33 -22.5 -55.5t-55.5 -22.5h-768q-31 0 -53.5 22.5t-22.5 55.5q0 31 22.5 53.5t53.5 22.5h250v641l-610 610q-37 37 -17 84z" /> -->
+<!--       <glyph unicode="&#xf001;" horiz-adv-x="1488" d="M0 213q0 57 27.5 103t72.5 77t98.5 47.5t106.5 16.5q25 0 50.5 -4t50.5 -11v779q0 27 16 48t43 29q23 6 99.5 29t178 52.5t215 62.5t211 60.5t164 46t74.5 18.5q35 0 58.5 -23.5t23.5 -58.5v-1028q0 -59 -27.5 -104.5t-73 -76t-99.5 -47t-105 -16.5t-105.5 16.5t-98.5 47 t-71.5 75.5t-27.5 105q0 57 27.5 103t71.5 77t98.5 47t105.5 16q27 0 52.5 -4t49.5 -10v537l-678 -195v-815q0 -59 -27.5 -104.5t-71.5 -76t-98.5 -47t-105.5 -16.5q-53 0 -106.5 16.5t-98.5 47t-72.5 76t-27.5 104.5z" /> -->
+<!--       <glyph unicode="&#xf002;" horiz-adv-x="1597" d="M0 901q0 137 52 258t143.5 212t212 143.5t258.5 52.5q137 0 257.5 -52.5t212 -143.5t143.5 -212t52 -258q0 -98 -28.5 -191.5t-81.5 -174.5l358 -359q18 -18 18 -47q0 -16 -18 -43t-45 -53.5t-53.5 -45t-42.5 -18.5q-29 0 -47 19l-359 358q-82 -53 -175 -81.5t-191 -28.5 q-137 0 -258 52t-212.5 143t-143.5 212t-52 258zM266 901q0 -84 32 -156.5t86 -126t127 -85t155 -31.5t154.5 31.5t126.5 85t86 126t32 156.5q0 82 -32 154.5t-86 127t-126.5 86t-154.5 31.5t-155 -31.5t-127 -86t-86 -127t-32 -154.5zM414 901q0 51 19.5 97t54 81t80 54.5 t98.5 19.5q20 0 34.5 -14.5t14.5 -36.5q0 -20 -14.5 -34.5t-34.5 -14.5q-63 0 -107.5 -44t-44.5 -108q0 -20 -14.5 -34.5t-34.5 -14.5q-23 0 -37 14.5t-14 34.5z" /> -->
+<!--     </font> -->
+<!--   </defs></svg> -->
+<div id="menu"></div>
+
+<div id="intro">
+By calling the nicEditors.allTextareas() function the below example replaces all 3 textareas on the page with nicEditors. NicEditors will match the size of the editor window with the size of the textarea it replaced.
+</div>
+<br />
+
+<h1>fa test: HOPE:<div class='mytest'> &#61440;</div> <i class="icon-list-ol"></i></h1>
+<div id="sample">
+<script type="text/javascript" src="../nicEdit.js"></script>
+<script type="text/javascript">
+  bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
+
+<h4>First Textarea</h4>
+<textarea name="area1" cols="40"></textarea>
+<br />
+
+<h4>Second Textarea</h4>
+<textarea name="area2" style="width: 100%;">
+  Some Initial Content was in this textarea
+</textarea>
+<br />
+
+<h4>Third Textarea</h4>
+<textarea name="area3" style="width: 300px; height: 100px;">
+  HTML <b>content</b> <i>default</i> in textarea
+</textarea>
+</div>
+
+</body>
+</html>
